@@ -47,11 +47,19 @@
             <p>
                 <div class="button">RANDOMIZE</div>             
            </p>
-            
-            
-            
-            
-        </div>
+               
+       
+            <h1>Get picture</h1>
+        
+        <button onclick="capturePhoto();">Maak een foto</button> <br>
+        <button onclick="capturePhotoEdit();">Bewerk foto</button> <br>
+        <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Uit Photo Library</button><br>
+        <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">Uit Photo Album</button><br>
+        <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+        <img style="display:none;" id="largeImage" src="" />
+        
+        
+    </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
          <!-- <script type="text/javascript">
